@@ -2,7 +2,7 @@
 
 ---
 
-- lorem ipsum ¯\\_(ツ)_/¯
+- lorem ipsum ¯\\\_(ツ)\_/¯
 - head of the ministry of verpeiltheit
 - CEO of making simple things complicated
 - into (computer) science
