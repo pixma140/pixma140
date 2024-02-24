@@ -9,7 +9,7 @@
 - bearded
 - nerd
 - metalhead
-- festivals
+- concerts & festivals
 - bei [@DiePARTEI](https://die-partei.de)
 - [#g2army](https://twitter.com/hashtag/g2army)
 - [#rostrotkupferbraunfastbronze](https://youtu.be/34VNA3HcP5U)
