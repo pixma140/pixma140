@@ -10,13 +10,13 @@
 - nerd
 - metalhead
 - concerts & festivals
-- bei [@DiePARTEI](https://die-partei.de)
+- @[DiePARTEI](https://die-partei.de) & @[CCC](https://www.ccc.de/)
 - [#g2army](https://twitter.com/hashtag/g2army)
 - [#rostrotkupferbraunfastbronze](https://youtu.be/34VNA3HcP5U)
 
 ---
 
-```bash
+``` bash
  ____________________________________________________
 / "Life, loathe it or ignore it, you can't like it." \
 |                                                    |
