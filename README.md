@@ -8,11 +8,13 @@
 - into (computer) science
 - bearded
 - nerd
-- metalhead
-- concerts & festivals
-- @[DiePARTEI](https://die-partei.de) & @[CCC](https://www.ccc.de/)
+- metalhead [#metalcore](https://youtu.be/xv-70a6yXfM)
+- concerts & festivals #sboa #fob
 - [#g2army](https://twitter.com/hashtag/g2army)
 - [#rostrotkupferbraunfastbronze](https://youtu.be/34VNA3HcP5U)
+- @[CCC](https://www.ccc.de/)
+- @[DiePARTEI](https://die-partei.de)
+
 
 ---
 
