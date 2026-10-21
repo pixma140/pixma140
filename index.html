@@ -8,17 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<!-- preconnect -->
-	<link rel=preconnect href="https://cdnjs.cloudflare.com">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!-- Layout only; this page needs neither Bootstrap JS nor jQuery. -->
+	<link rel="stylesheet" href="assets/v1/bootstrap-5.3.8.min.css">
 
 	<style>
 
@@ -27,29 +18,33 @@
 			#050608 darkblack,  #111827 otherdark, #6BFF1F lightgreen, #3AA30D darkgreen,
 			#E5E7EB white,      #9CA3AF lightgray, #BDBDBD othergrey,  #6B6B6B darkergrey */
 
-		@font-face { font-family: Bangers-Regular; src: url('fonts/Bangers-Regular.ttf'); font-display: swap; }
-		@font-face { font-family: Raleway-Regular; src: url('fonts/Raleway-Regular.ttf'); font-display: swap; }
-		@font-face { font-family: CaskaydiaCoveNerdFontCompleteMono; src: url('fonts/CaskaydiaCoveNerdFontCompleteMono.ttf'); font-display: swap; }
+		@font-face { font-family: Profile-Heading; src: url('fonts/profile-heading.woff2') format('woff2'); font-display: swap; }
+		@font-face { font-family: Profile-Body; src: url('fonts/profile-body.woff2') format('woff2'); font-display: swap; }
+		@font-face { font-family: Profile-Mono; src: url('fonts/profile-mono.woff2') format('woff2'); font-display: swap; }
 
 		body {
 			color: #E5E7EB;
-			// color: #9CA3AF;
-			// color: #BDBDBD;
+			/* color: #9CA3AF; */
+			/* color: #BDBDBD; */
 			background: #111827;
-			// background: #222733;
+			/* background: #222733; */
 		}
 
-		h1 { font-family: Bangers-Regular }
-		li { font-family: Raleway-Regular }
+		h1 { font-family: Profile-Heading, sans-serif }
+		li { font-family: Profile-Body, sans-serif }
 		i  { color: black }
+		.icon { height: 1em; width: 1em; vertical-align: -0.125em; }
+		body > .container { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+		body > .container > div { flex: 1; display: flex; flex-direction: column; width: 100%; }
 
 		a:link { color: #6BFF1F; text-decoration: none; }
 		a:visited { color: #6BFF1F; text-decoration: none; }
 		a:hover { color: #3AA30D; text-decoration: underline; }
 		a:active { color: #6BFF1F; text-decoration: none; }
 
-		.footer {	position: absolute; right: 0; bottom: 0; left: 0; padding: 1em; background-color: #3AA30D;
-				text-align: center; color: #000; font-size: 0.75em; font-family: CaskaydiaCoveNerdFontCompleteMono; 
+		.footer {	margin-top: auto; padding: 1em; background-color: #3AA30D;
+				position: relative; left: 50%; transform: translateX(-50%); width: 100vw;
+				text-align: center; color: #000; font-size: 0.75em; font-family: Profile-Mono, monospace;
 				font-weight: bold; }
 
 		::-moz-selection { /* Code for Firefox */
@@ -100,16 +95,16 @@
 
 			<div class="footer">
 				<span>Socials:</span> <!-- square -->
-				<a href="https://github.com/pixma140" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://twitter.com/pixma140" target="_blank"><i class="fab fa-twitter"></i></a>
-				<a href="https://chaos.social/@pixma140" target="_blank"><i class="fab fa-mastodon"></i></a>
-				<a href="https://instagram.com/pixma140" target="_blank"><i class="fab fa-instagram"></i></a>
-				<a href="https://open.spotify.com/user/pixma140" target="_blank"><i class="fab fa-spotify"></i></a>
+				<a href="https://github.com/pixma140" target="_blank" aria-label="GitHub"><img class="icon" src="assets/v1/github.svg" alt="" width="16" height="16"></a>
+				<a href="https://twitter.com/pixma140" target="_blank" aria-label="Twitter"><img class="icon" src="assets/v1/twitter.svg" alt="" width="16" height="16"></a>
+				<a href="https://chaos.social/@pixma140" target="_blank" aria-label="Mastodon"><img class="icon" src="assets/v1/mastodon.svg" alt="" width="16" height="16"></a>
+				<a href="https://instagram.com/pixma140" target="_blank" aria-label="Instagram"><img class="icon" src="assets/v1/instagram.svg" alt="" width="16" height="16"></a>
+				<a href="https://open.spotify.com/user/pixma140" target="_blank" aria-label="Spotify"><img class="icon" src="assets/v1/spotify.svg" alt="" width="16" height="16"></a>
 				<!-- <i class="fas fa-grip-lines-vertical"></i> -->
 				<span>
 					/ 
-					<i class="fas fa-globe-europe"></i>
-					located <i class="fas fa-at"></i></a> eu-central-1
+					<img class="icon" src="assets/v1/earth-europe.svg" alt="" width="16" height="16">
+					located <img class="icon" src="assets/v1/at.svg" alt="@" width="16" height="16"> eu-central-1
 					<!-- located <i class="fas fa-at"></i> eu-central-1 -->
 				</span>
 				

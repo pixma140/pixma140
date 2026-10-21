@@ -1,0 +1,6 @@
+# Fonts are managed locally in the deployed site's html/fonts directory.
+fonts/
+*.ttf
+*.otf
+*.woff
+*.woff2
