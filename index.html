@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="en">
 <head>
 	<title>/dev/random | pixma140</title>
 	<!-- charset -->
 	<meta charset="utf-8">
 	<!-- viewport for mobile friendly -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="pixma140 — bearded nerd, metalhead, into computer science, concerts and festivals.">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<!-- Layout only; this page needs neither Bootstrap JS nor jQuery. -->
-	<link rel="stylesheet" href="assets/v1/bootstrap-5.3.8.min.css">
 
 	<style>
 
@@ -23,6 +22,13 @@
 		@font-face { font-family: Profile-Mono; src: url('fonts/profile-mono.woff2') format('woff2'); font-display: swap; }
 
 		body {
+			margin: 0;
+			font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			-webkit-text-size-adjust: 100%;
+			-webkit-tap-highlight-color: transparent;
 			color: #E5E7EB;
 			/* color: #9CA3AF; */
 			/* color: #BDBDBD; */
@@ -30,7 +36,27 @@
 			/* background: #222733; */
 		}
 
-		h1 { font-family: Profile-Heading, sans-serif }
+		/* Small layout rules replacing the homepage's Bootstrap utilities. */
+		*, ::before, ::after { box-sizing: border-box; }
+		.container { width: 100%; padding-right: 0.75rem; padding-left: 0.75rem; margin-right: auto; margin-left: auto; }
+		.pt-5 { padding-top: 3rem; }
+		.px-1 { padding-right: 0.25rem; padding-left: 0.25rem; }
+		.mx-auto { margin-right: auto; margin-left: auto; }
+		.text-center { text-align: center; }
+		@media (min-width: 576px) { .container { max-width: 540px; } }
+		@media (min-width: 768px) {
+			.container { max-width: 720px; }
+			.px-md-5 { padding-right: 3rem; padding-left: 3rem; }
+		}
+		@media (min-width: 992px) { .container { max-width: 960px; } }
+		@media (min-width: 1200px) {
+			.container { max-width: 1140px; }
+		}
+		@media (min-width: 1400px) { .container { max-width: 1320px; } }
+		h1 { margin-top: 0; margin-bottom: 0.5rem; font-family: Profile-Heading, sans-serif; font-size: calc(1.375rem + 1.5vw); font-weight: 500; line-height: 1.2; }
+		@media (min-width: 1200px) { h1 { font-size: 2.5rem; } }
+		ul { margin-top: 0; margin-bottom: 1rem; padding-left: 2rem; }
+		img { vertical-align: middle; }
 		li { font-family: Profile-Body, sans-serif }
 		i  { color: black }
 		.icon { height: 1em; width: 1em; vertical-align: -0.125em; }
@@ -78,6 +104,7 @@
 <body>
 	<div class="container">
 		<div class="row-xs pt-5 px-1 px-md-5 mx-auto">
+			<main>
 			<h1 class="text-center" >pixma140</h1>
 			
 			<ul>
@@ -92,8 +119,9 @@
 				<li><a href="https://youtu.be/34VNA3HcP5U" target="_blank">#rostrotkupferbraunfastbronze</a></li>
 				<li>@<a href="https://www.ccc.de/" target="_blank">CCC</a> / @<a href="https://toolbox-bodensee.de/" target="_blank">Toolbox Bodensee e.V.</a> / @<a href="https://die-partei.de" target="_blank">DiePARTEI</a></li>
 			</ul>
+			</main>
 
-			<div class="footer">
+			<footer class="footer">
 				<span>Socials:</span> <!-- square -->
 				<a href="https://github.com/pixma140" target="_blank" aria-label="GitHub"><img class="icon" src="assets/v1/github.svg" alt="" width="16" height="16"></a>
 				<a href="https://twitter.com/pixma140" target="_blank" aria-label="Twitter"><img class="icon" src="assets/v1/twitter.svg" alt="" width="16" height="16"></a>
@@ -129,7 +157,7 @@
 				<a href="" target="_blank"><i class="fab fa-ethereum"></i></a>
 				<a href="" target="_blank"><i class="fas fa-beer"></i></a>
 				<a href="" target="_blank"><i class="fab fa-snapchat"></i></a> -->
-			</div>
+			</footer>
 
 		</div>
 	</div>
